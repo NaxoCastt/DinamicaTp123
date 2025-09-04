@@ -12,7 +12,7 @@ class calculadora
         $string = "";
         $metodo = encapsuladorMetodos();
         $resp = 0;
-        if ($metodo['number1'] != "" && $metodo['number2'] != "") {
+        if (isset($metodo['number1']) && $metodo['number1'] != "" && $metodo['number2'] != "") {
             $operacion = $metodo['operacion'];
             if ($operacion == "suma") {
                 $resp = $metodo['number1'] + $metodo['number2'];

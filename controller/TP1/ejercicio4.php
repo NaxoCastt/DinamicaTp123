@@ -9,7 +9,7 @@ class usuarioEdad
     {
         $string = "No hay nada que mostrar";
         $metodo = encapsuladorMetodos();
-        if ($metodo) {
+        if (isset($metodo['edad'])) {
 
             $edad = $metodo['edad'];
 

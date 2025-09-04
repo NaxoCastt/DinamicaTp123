@@ -10,7 +10,7 @@ class pdfsViewer
 
         $directorio = __DIR__ . '/../../view/TP3/';
         $string = "El archivo no pudo ser cargado";
-        if ($_FILES['archivo']['error'] == 0) {
+        if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] == 0) {
 
             if ($_FILES['archivo']['type'] == "application/msword" || $_FILES['archivo']['type'] == "application/pdf") {
 

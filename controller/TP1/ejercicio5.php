@@ -10,7 +10,7 @@ class usuarioEstudios
         include_once __DIR__ . '/../encapsulamiento/encapsulado.php';
         $metodo = encapsuladorMetodos();
         $string = "No hay nada que mostrar";
-        if ($metodo) {
+        if (isset($metodo['estudios'])) {
 
 
 

@@ -18,7 +18,7 @@ class usuarioyContra
         $bandera = false;
 
 
-        if ($metodo['usuario'] && $metodo['contrasenia']) {
+        if (isset($metodo['usuario']) && $metodo['usuario'] && $metodo['contrasenia']) {
 
             $i = 0;
             while ($bandera == false && $i < 3) {

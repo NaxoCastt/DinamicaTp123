@@ -234,7 +234,7 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 
-    <script src="../../util/Tp2/js/script.js"></script>
+    <script src="../js/js.js"></script>
     <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {
             'use strict'

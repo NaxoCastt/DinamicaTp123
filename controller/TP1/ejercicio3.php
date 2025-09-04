@@ -9,7 +9,7 @@ class usuario3
         $metodo = encapsuladorMetodos();
 
         $string = "No hay nada que mostrar";
-        if ($metodo) {
+        if (isset($metodo['nombre'])) {
 
             $string = "Hola, yo soy " . $metodo['nombre'] . ", " . $metodo['apellido'] . " tengo " . $metodo['edad'] . " años y vivo en " . $metodo['direccion'];
         }
