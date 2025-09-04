@@ -1,3 +1,7 @@
+<?php 
+    include_once __DIR__ . "/../../controller/TP2/ejercicio4.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,16 +24,16 @@
                 <i class="fa-solid fa-xmark"></i></a>
         </div>
         <br>
-        <p><strong>Titulo: </strong> <?php ECHO $_GET['titulo'] ?></p>
-        <p><strong>Actores: </strong> <?php ECHO $_GET['actores'] ?></p>
-        <p><strong>Director: </strong> <?php ECHO $_GET['director'] ?></p>
-        <p><strong>Guión: </strong> <?php ECHO $_GET['guion'] ?></p>
-        <p><strong>Produccion: </strong> <?php ECHO $_GET['produccion'] ?></p>
-        <p><strong>Año: </strong> <?php ECHO $_GET['anio'] ?></p>
-        <p><strong>Nacionalidad: </strong> <?php ECHO $_GET['nacionalidad'] ?></p>
-        <p><strong>Genero: </strong> <?php ECHO $_GET['genero'] ?></p>
-        <p><strong>Duracion: </strong> <?php ECHO $_GET['duracion'] ?></p>
-        <p><strong>Restricciones de edades: </strong> <?php ECHO $_GET['restriccion'] ?></p>
+        <p><strong>Titulo: </strong> <?php ECHO $metodo['titulo'] ?></p>
+        <p><strong>Actores: </strong> <?php ECHO $metodo['actores'] ?></p>
+        <p><strong>Director: </strong> <?php ECHO $metodo['director'] ?></p>
+        <p><strong>Guión: </strong> <?php ECHO $metodo['guion'] ?></p>
+        <p><strong>Produccion: </strong> <?php ECHO $metodo['produccion'] ?></p>
+        <p><strong>Año: </strong> <?php ECHO $metodo['anio'] ?></p>
+        <p><strong>Nacionalidad: </strong> <?php ECHO $metodo['nacionalidad'] ?></p>
+        <p><strong>Genero: </strong> <?php ECHO $metodo['genero'] ?></p>
+        <p><strong>Duracion: </strong> <?php ECHO $metodo['duracion'] ?></p>
+        <p><strong>Restricciones de edades: </strong> <?php ECHO $metodo['restriccion'] ?></p>
     </div>
 
 

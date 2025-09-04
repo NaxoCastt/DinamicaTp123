@@ -162,13 +162,13 @@
 
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="restriccion" id="restriccion2"
-                                value="may7">
+                                value="mayores de 7">
                             <label class="form-check-label" for="restriccion2">Mayores de 7 años</label>
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="restriccion" id="restriccion3"
-                                value="may18">
+                                value="mayores 18">
                             <label class="form-check-label" for="restriccion3">Mayores de 18 años</label>
                         </div>
                     </div>

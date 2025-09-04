@@ -26,20 +26,20 @@ $bandera = $obj->ejercicio3();
                 <i class="fa-solid fa-xmark"></i></a>
         </div>
         <br>
-        <p><strong>Titulo: </strong> <?php echo $_POST['titulo'] ?></p>
-        <p><strong>Actores: </strong> <?php echo $_POST['actores'] ?></p>
-        <p><strong>Director: </strong> <?php echo $_POST['director'] ?></p>
-        <p><strong>Guión: </strong> <?php echo $_POST['guion'] ?></p>
-        <p><strong>Produccion: </strong> <?php echo $_POST['produccion'] ?></p>
-        <p><strong>Año: </strong> <?php echo $_POST['anio'] ?></p>
-        <p><strong>Nacionalidad: </strong> <?php echo $_POST['nacionalidad'] ?></p>
-        <p><strong>Genero: </strong> <?php echo $_POST['genero'] ?></p>
-        <p><strong>Duracion: </strong> <?php echo $_POST['duracion'] ?></p>
-        <p><strong>Restricciones de edades: </strong> <?php echo $_POST['restriccion'] ?></p>
+        <p><strong>Titulo: </strong> <?php echo $metodo['titulo'] ?></p>
+        <p><strong>Actores: </strong> <?php echo $metodo['actores'] ?></p>
+        <p><strong>Director: </strong> <?php echo $metodo['director'] ?></p>
+        <p><strong>Guión: </strong> <?php echo $metodo['guion'] ?></p>
+        <p><strong>Produccion: </strong> <?php echo $metodo['produccion'] ?></p>
+        <p><strong>Año: </strong> <?php echo $metodo['anio'] ?></p>
+        <p><strong>Nacionalidad: </strong> <?php echo $metodo['nacionalidad'] ?></p>
+        <p><strong>Genero: </strong> <?php echo $metodo['genero'] ?></p>
+        <p><strong>Duracion: </strong> <?php echo $metodo['duracion'] ?></p>
+        <p><strong>Restricciones de edades: </strong> <?php echo $metodo['restriccion'] ?></p>
         <?php   
             if($bandera){
                 
-                echo (" <img src='http://localhost/DinamicaTp123/view/TP3/". $_FILES['imagen']['name']. "' alt= 'Portada de la pelicula ". $_POST['titulo'] ."' class='img-fluid rounded shadow mt-3' style='max-width: 200px; height: auto'/> " );
+                echo (" <img src='http://localhost/DinamicaTp123/view/TP3/". $_FILES['imagen']['name']. "' alt= 'Portada de la pelicula ". $metodo['titulo'] ."' class='img-fluid rounded shadow mt-3' style='max-width: 200px; height: auto'/> " );
             }
             else{
                 echo ' <p> <strong>Portada no cargada</strong> </p>';
