@@ -1,16 +1,23 @@
 <?php
-function ejercicio6(){
+include_once __DIR__ . '/../encapsulamiento/encapsulado.php';
 
-    $string = "No hay nada que mostrar";
-    include_once __DIR__ .  '/../encapsulamiento/encapsulado.php';
-    $metodo = encapsuladorMetodos();
-    if ($metodo) {
-        
-        
-        
-        $string = "La cantidad de deportes que practican son " . count($metodo['deportes']);
-        
-    } 
-    return $string;
+class usuarioDeportes
+{
+
+
+    public function ejercicio6()
+    {
+
+        $string = "No hay nada que mostrar";
+        $metodo = encapsuladorMetodos();
+        if ($metodo) {
+
+
+
+            $string = "La cantidad de deportes que practican son " . count($metodo['deportes']);
+
+        }
+        return $string;
+    }
 }
 ?>

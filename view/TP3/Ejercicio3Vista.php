@@ -1,6 +1,7 @@
 <?php
 include_once __DIR__ . '/../../controller/TP3/Ejercicio3.php';
-$bandera = ejercicio3();
+$obj = new jpgViewer();
+$bandera = $obj->ejercicio3();
 ?>
 <!DOCTYPE html>
 <html lang="en">

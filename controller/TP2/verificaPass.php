@@ -1,36 +1,42 @@
 <?php
-function ejercicio3()
+include_once __DIR__ . '/../encapsulamiento/encapsulado.php';
+
+class usuarioyContra
 {
-    include_once __DIR__ . '/../encapsulamiento/encapsulado.php';
-    $metodo = encapsuladorMetodos();
-    $string = "";
-    $datos = [
-
-        0 => ["usuario" => "Naxo", "contrasenia" => "Fai-5521"],
-        1 => ["usuario" => "Joaquin", "contrasenia" => "Hola1234"],
-        2 => ["usuario" => "Ignacio", "contrasenia" => "Facultad24"],
-    ];
-    $bandera = false;
 
 
-    if ($metodo['usuario'] && $metodo['contrasenia']) {
+    public function ejercicio3()
+    {
+        $metodo = encapsuladorMetodos();
+        $string = "";
+        $datos = [
 
-        $i = 0;
-        while ($bandera == false && $i < 3) {
+            0 => ["usuario" => "Naxo", "contrasenia" => "Fai-5521"],
+            1 => ["usuario" => "Joaquin", "contrasenia" => "Hola1234"],
+            2 => ["usuario" => "Ignacio", "contrasenia" => "Facultad24"],
+        ];
+        $bandera = false;
 
-            if ($datos[$i]['usuario'] == $metodo['usuario'] && $datos[$i]['contrasenia'] == $metodo['contrasenia']) {
 
-                $string = "Bienvenido " . $datos[$i]['usuario'];
-                $bandera = true;
+        if ($metodo['usuario'] && $metodo['contrasenia']) {
+
+            $i = 0;
+            while ($bandera == false && $i < 3) {
+
+                if ($datos[$i]['usuario'] == $metodo['usuario'] && $datos[$i]['contrasenia'] == $metodo['contrasenia']) {
+
+                    $string = "Bienvenido " . $datos[$i]['usuario'];
+                    $bandera = true;
+                }
+                $i++;
             }
-            $i++;
         }
+
+        if ($bandera == false) {
+
+            $string = "Usuario no encontrado";
+        }
+        return $string;
+
     }
-
-    if ($bandera == false) {
-
-        $string = "Usuario no encontrado";
-    }
-    return $string;
-
 }

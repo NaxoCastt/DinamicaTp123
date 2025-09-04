@@ -1,20 +1,25 @@
 <?php
-function Ejercicio2()
+
+class textoViewer
 {
 
-    $dir = __DIR__ . '/../../view/TP3/';
-    $string = "";
-    if ($_FILES["archivo2"]['type'] == "text/plain" && $_FILES["archivo2"]['error'] == 0) {
+    public function Ejercicio2()
+    {
 
-        if (copy($_FILES['archivo2']['tmp_name'], $dir . $_FILES['archivo2']['name'])) {
+        $dir = __DIR__ . '/../../view/TP3/';
+        $string = "";
+        if ($_FILES["archivo2"]['type'] == "text/plain" && $_FILES["archivo2"]['error'] == 0) {
 
-            $string = file_get_contents($dir . $_FILES['archivo2']['name']);
+            if (copy($_FILES['archivo2']['tmp_name'], $dir . $_FILES['archivo2']['name'])) {
+
+                $string = file_get_contents($dir . $_FILES['archivo2']['name']);
+            } else {
+                $string = "El archivo no pudo ser copiado";
+            }
         } else {
-            $string = "El archivo no pudo ser copiado";
+            $string = "El archivo no pudo ser cargado o no es de texto plano";
         }
-    } else {
-        $string = "El archivo no pudo ser cargado o no es de texto plano";
+        return $string;
     }
-    return $string;
 }
 ?>

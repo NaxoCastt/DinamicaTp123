@@ -1,28 +1,35 @@
 <?php
-function ejercicio8(){
+include_once __DIR__ . '/../encapsulamiento/encapsulado.php';
 
-    $string = "";
-    include_once __DIR__ . '/../encapsulamiento/encapsulado.php';
-    $metodo = encapsuladorMetodos();
-    $valor = 300;
-    if (isset($metodo['edad'])) {
-        
-        if (isset($metodo['esEstudiante'])) {
-            $esEstudiante = $metodo['esEstudiante'];
-        } else {
-            $esEstudiante = 'no definido';
+class usuarioEstudiante
+{
+
+
+    public function ejercicio8()
+    {
+
+        $string = "";
+        $metodo = encapsuladorMetodos();
+        $valor = 300;
+        if (isset($metodo['edad'])) {
+
+            if (isset($metodo['esEstudiante'])) {
+                $esEstudiante = $metodo['esEstudiante'];
+            } else {
+                $esEstudiante = 'no definido';
+            }
+
+
+            if ($metodo['edad'] < 12 || $esEstudiante == "si") {
+                $valor = 160;
+            }
+            if ($metodo['edad'] >= 12 & $esEstudiante == "si") {
+                $valor = 180;
+            }
         }
-        
-        
-        if ($metodo['edad'] < 12 || $esEstudiante == "si") {
-            $valor = 160;
-        }
-        if ($metodo['edad'] >= 12 & $esEstudiante == "si") {
-            $valor = 180;
-        }
+
+        $string = "El valor a pagar es de " . $valor . "$. ";
+        return $string;
     }
-    
-    $string = "El valor a pagar es de " . $valor . "$. ";
-    return $string;
 }
-    ?>
+?>

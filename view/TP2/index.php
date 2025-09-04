@@ -8,40 +8,13 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>TP 2</title>
-    <link rel="stylesheet" href="../../util/Tp2/css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary m-auto">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Trabajos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 g-5">
-
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary me-2"
-                            href="http://localhost/DinamicaTp123/view/TP1/index.php">Tp1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary me-2 active "
-                            href="http://localhost/DinamicaTp123/view/TP2/index.php">Tp2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary me-2"
-                            href="http://localhost/DinamicaTp123/view/TP3/index.php">Tp3</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
+    <?php include_once '../estructura/header.php' ?>
 
     <h2>Ejercicio 2</h2>
 
@@ -251,20 +224,8 @@
 
 
 
-    <footer class="bg-dark text-white py-4 w-100 mt-3">
-        <div class="container">
-            <div class="row w-100">
-                <div class="col-md-4 w-100">
-                    <h5>Entrega tps</h5>
-                    <p>Gavilan-San Segundo-Castillo</p>
-                </div>
 
-            </div>
-    </footer>
-
-
-
-
+    <?php include_once '../estructura/footer.php' ?>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

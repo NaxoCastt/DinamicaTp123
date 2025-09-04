@@ -1,46 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../util/Tp1/css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>TP 1</title>
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-    <nav class="navbar w-100 navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Trabajos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 g-5">
 
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary me-2 active"
-                            href="http://localhost/DinamicaTp123/view/TP1/index.php">Tp1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary me-2"
-                            href="http://localhost/DinamicaTp123/view/TP2/index.php">Tp2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary me-2"
-                            href="http://localhost/DinamicaTp123/view/TP3/index.php">Tp3</a>
-                    </li>
-                </ul>
+    <?php include_once '../estructura/header.php' ?>
 
-            </div>
-        </div>
-    </nav>
-    <br>
-    <br>
     <h1>Trabajo practico</h1>
     <h2>Punto 1</h2>
     <form action="ejercicio1Vista.php" method="post">
@@ -155,6 +127,7 @@
         <label for="secundario">Estudios secundarios</label>
         <input type="radio" name="estudios" id="secundario" value="secundarios">
 
+
         <label for="">Sexo</label>
         <select name="sexo" id="sexo">
             <option value="">Seleccione un sexo</option>
@@ -250,16 +223,8 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <footer class="bg-dark text-white py-4 w-100 mt-3">
-        <div class="container">
-            <div class="row w-100">
-                <div class="col-md-4 w-100">
-                    <h5>Entrega tps</h5>
-                    <p>Gavilan-San Segundo-Castillo</p>
-                </div>
-                
-        </div>
-    </footer>
+
+    <?php include_once '../estructura/footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
